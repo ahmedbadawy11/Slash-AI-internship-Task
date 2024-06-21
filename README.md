@@ -21,6 +21,12 @@ $ pip install -r requirements.txt
 ```
 
 ### Run the Streamlit app
+
+1) 
 ```bash
-$ streamlit run scr/app.py
+$ cd src
+```
+2) 
+```bash
+$ streamlit run app.py
 ```
