@@ -3,7 +3,7 @@ from PIL import Image
 from model.YOLO_v8 import get_image_components
 
 
-# Streamlit application
+
 st.title("Image Component Detection with YOLO v8")
 st.write("Upload an image and click 'Analyse Image' to detect components.")
 
@@ -24,7 +24,6 @@ if uploaded_file is not None:
             # Analyse Image using YOLOv8 
             detected_classes=get_image_components(image)
             
-            # Display the results
             st.write("Detected components:")
             if detected_classes:
                 st.write(detected_classes)
