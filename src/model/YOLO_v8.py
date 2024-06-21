@@ -9,8 +9,8 @@ def  get_image_components(image):
     # Extract predicted classes
     detected_classes = set()
     for result in results:
-        for pred in result.boxes.data.tolist():
-            class_id = int(pred[5])
+        for pred in result.boxes.cls.tolist():
+            class_id = int(pred)
             detected_classes.add(result.names[class_id])
     
     return list(detected_classes)
